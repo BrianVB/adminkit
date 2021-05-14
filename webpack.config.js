@@ -20,7 +20,7 @@ module.exports = {
   devtool:
     process.env.NODE_ENV === "production" ? "source-map" : "inline-source-map",
   output: {
-    path: Path.join(opts.rootDir, "dist"),
+    path: Path.join(opts.rootDir, "../src/assets/public"),
     pathinfo: opts.devBuild,
     filename: "js/[name].js",
     chunkFilename: 'js/[name].js',
@@ -119,6 +119,7 @@ module.exports = {
     contentBase: Path.join(__dirname, "static"),
     compress: true,
     port: 8080,
+    host: '0.0.0.0', // -- Added to work over local network
     open: true
   }
 };
