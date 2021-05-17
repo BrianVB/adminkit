@@ -1,0 +1,19 @@
+// Place your custom variables here
+nav.sidebar .svg-inline--fa{
+	height:18px;
+	width:18px;
+}
+
+.sidebar-dropdown .sidebar-dropdown .sidebar-link {
+    padding: .625rem 1.5rem .625rem 4.5rem;
+}
+
+#top-navbar{
+	padding-top: .250rem;
+	padding-bottom: .250rem;
+}
+
+// --- For the summaries on yii's gridviews
+.summary-wrapper .col-auto{
+	margin-right:10px;
+}
