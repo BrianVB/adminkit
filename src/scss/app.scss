@@ -7,7 +7,8 @@
 
 // Variables
 @import "1-variables/app";
-
+@import "1-variables/custom"; // --- Custom addition 
+ 
 // Bootstrap
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
@@ -32,6 +33,7 @@
 @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
 @import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/tooltip"; // --- Custom addition 
 @import "~bootstrap/scss/utilities/api";
 
 // Theme mixins
@@ -62,10 +64,11 @@
 @import "4-utilities/cursors";
 
 // 3rd party plugins
-@import "~jsvectormap/dist/css/jsvectormap";
+// @import "~jsvectormap/dist/css/jsvectormap";
 @import "~simplebar/dist/simplebar";
-@import "~flatpickr/dist/flatpickr";
+// @import "~flatpickr/dist/flatpickr";
 
 // 3rd party plugin styles
-@import "5-vendor/flatpickr";
+// @import "5-vendor/flatpickr";
 @import "5-vendor/simplebar";
+
