@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.2] 2021-05-19
+
+- Add file structure to README.md
+- Add icons to dashboard (/index.html)
+- Add marketing page (/upgrade-to-pro.html)
+- Remove unused sass files
+- Remove unused dependencies
+- Various visual changes
+- Upgrade dependencies
+
+## [3.0.1] 2021-05-17
+
+- Fix Simplebar bug on auth pages
+- Upgrade to bootstrap@5.0.1
+- Upgrade dependencies
+
 ## [3.0.0] 2021-05-12
 
 - Set Chart.js font family
