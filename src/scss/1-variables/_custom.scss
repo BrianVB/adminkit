@@ -53,6 +53,15 @@ nav.sidebar .svg-inline--fa{
 	top: 1.2rem
 }
 
+.sidebar-dropdown .sidebar-link {
+	padding: .625rem 1.5rem .625rem 3.25rem;
+	font-weight: 400;
+	font-size: 90%;
+	border-left: 0;
+	color: #adb5bd;
+	background: transparent
+}
+
 .sidebar-dropdown .sidebar-link:before {
 	content: "→";
 	display: inline-block;
@@ -68,4 +77,12 @@ nav.sidebar .svg-inline--fa{
 	border-left: 0;
 	color: #e9ecef;
 	background: transparent
+}
+
+.sidebar-dropdown .sidebar-dropdown .sidebar-link {
+	padding: .625rem 1.5rem .625rem 4.5rem
+}
+
+.sidebar-dropdown .sidebar-dropdown .sidebar-dropdown .sidebar-link {
+	padding: .625rem 1.5rem .625rem 5.75rem
 }
