@@ -17,3 +17,38 @@ nav.sidebar .svg-inline--fa{
 .summary-wrapper .col-auto{
 	margin-right:10px;
 }
+
+/* This is part of adminkit in the demo but not in their repo for sidebar stuff */
+.sidebar [data-bs-toggle=collapse] {
+	position: relative
+}
+
+.sidebar [data-bs-toggle=collapse]:after {
+	content: " ";
+	border: solid;
+	border-width: 0 .075rem .075rem 0;
+	display: inline-block;
+	padding: 2px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	top: 1.2rem;
+	right: 1.5rem;
+	transition: all .2s ease-out
+}
+
+.sidebar [aria-expanded=true]:after,
+.sidebar [data-bs-toggle=collapse]:not(.collapsed):after {
+	-webkit-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	top: 1.4rem
+}
+
+.sidebar-dropdown [data-bs-toggle=collapse]:after {
+	top: 1rem
+}
+
+.sidebar-dropdown [aria-expanded=true]:after,
+.sidebar-dropdown [data-bs-toggle=collapse]:not(.collapsed):after {
+	top: 1.2rem
+}
