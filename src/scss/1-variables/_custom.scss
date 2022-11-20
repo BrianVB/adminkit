@@ -105,10 +105,13 @@ font-style: italic;
 	    margin-top:30px;
 	}
 
-	> .heading {
-        font-weight: 700;
+    > .heading {
+        cursor: pointer;
+        font-weight: bold;
         font-size: 1rem;
-        border: 1px solid #ddd;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ddd;
         display: inline-block;
         padding: 0.25rem 1rem;
         transform: translateY(-45px);
@@ -117,7 +120,29 @@ font-style: italic;
         border-radius: 0.5rem;
         position: absolute;
         box-shadow: inset 0 0 20px -14px;
-	}
+        transition: transform ease 0.5s, box-shadow ease 0.5s, border-color ease .5s;
+    }
+
+    > .heading:after {
+        font-family: "Font Awesome 6 Free";
+        content: "\f0da";
+        margin-left:10px;
+        font-style: normal;
+        transform: rotate(0deg);
+        transition: transform ease 0.5s;
+        display: inline-block;
+    }
+
+    > .heading.collapsed {
+        border-color:transparent;
+        box-shadow: none;
+        transform: translateY(-25px);
+    }
+
+    > .heading.collapsed:after {
+        transform: rotate(90deg);
+    }
+
 
 	.redactor-box{
 		margin-bottom:0
