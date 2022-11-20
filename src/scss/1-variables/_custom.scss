@@ -13,11 +13,39 @@ nav.sidebar .svg-inline--fa{
 	padding-bottom: .250rem;
 }
 
-// --- For the summaries on yii's gridviews
+/* GridView Stuff */
 .summary-wrapper .col-auto{
 	margin-right:10px;
 }
 
+th [data-sort]::after, th[data-sort]::after {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f0dc";
+    margin-left: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+th[data-sort].asc::after, th [data-sort].asc::after, th .selected.asc::after {
+    content: "\f0de";
+}
+
+th[data-sort].desc::after, th [data-sort].desc::after, th .selected.desc::after {
+    content: "\f0dd";
+}
+
+.revealing-column > span{
+	color:#ccc;
+}
+.revealing-column > [data-bs-toggle]{
+	color:#495057;
+}
+.tooltip-inner p:last-child{
+	/* Removes margin from last paragraph in tooltips rendered with HTML
+	Probably could find a better way to do this since this may affect EVERYTHING
+	but for right now this is okay */
+	margin-bottom: 0;;
+}
 /* This is part of adminkit in the demo but not in their repo for sidebar stuff */
 .sidebar [data-bs-toggle=collapse] {
 	position: relative
@@ -152,7 +180,7 @@ font-style: italic;
     }
 
     > .floating-header-item.dropdown {
-    	right:25px;
+    	right:15px;
     	border-radius: 50%;
     }
 
