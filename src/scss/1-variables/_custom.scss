@@ -46,6 +46,21 @@ th[data-sort].desc::after, th [data-sort].desc::after, th .selected.desc::after 
 	but for right now this is okay */
 	margin-bottom: 0;;
 }
+
+table td.dropdown-cell {
+	/* Need this specificty level to override bootstrap */
+    padding: 0.25rem;
+}
+.dropdown-cell .dropdown .dropdown-ellipsis {
+	cursor: pointer;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.dropdown-cell .dropdown .dropdown-toggle:before{
+	display:none;
+}
+
 /* This is part of adminkit in the demo but not in their repo for sidebar stuff */
 .sidebar [data-bs-toggle=collapse] {
 	position: relative
