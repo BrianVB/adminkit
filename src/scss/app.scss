@@ -80,6 +80,23 @@
     background: transparent;
 }
 
+#top-navbar li .nav-link {
+    border-right: 1px solid #ccc;
+    margin-right: 5px;
+    padding-right: 15px;
+}
+#top-navbar li:last-of-type .nav-link {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+/* Help stuff */
+.help-container header {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 /**
  * Bootstrap overrides 
  */
